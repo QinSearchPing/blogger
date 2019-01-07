@@ -1,66 +1,64 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        blogger
-      </h1>
-      <h2 class="subtitle">
-        My kryptonian Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div>
+    <el-container style="height: 100vh">
+      <!--<el-aside>-->
+      <nav-menu style="display: flex;flex-direction: column;justify-content: center"/>
+      <!--</el-aside>-->
+      <el-container>
+        <el-header>Header</el-header>
+        <el-main>main</el-main>
+        <el-footer>Footer</el-footer>
+      </el-container>
+    </el-container>
+  </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
-
+import NavMenu from '~/components/NavMenu.vue'
 export default {
   components: {
-    Logo
+    Logo,
+    NavMenu
   }
 }
 </script>
 
 <style>
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.el-header,
+.el-footer {
+  background-color: #b3c0d1;
+  color: #333;
   text-align: center;
+  line-height: 60px;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.el-aside {
+  background-color: #d3dce6;
+  color: #333;
+  text-align: center;
+  line-height: 500px;
+  width: 20vh;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.el-main {
+  background-color: #e9eef3;
+  color: #333;
+  text-align: center;
+  line-height: 160px;
 }
 
-.links {
-  padding-top: 15px;
+body > .el-container {
+  margin-bottom: 40px;
+  height: 100vh;
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+  line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+  line-height: 320px;
 }
 </style>
