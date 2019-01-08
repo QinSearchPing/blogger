@@ -1,36 +1,59 @@
 <template>
   <div>
     <el-container style="height: 100vh">
-      <!--<el-aside>-->
-      <nav-menu style="display: flex;flex-direction: column;justify-content: center"/>
-      <!--</el-aside>-->
+      <nav-menu class="nav-menu-structure"/>
       <el-container>
-        <el-header>Header</el-header>
-        <el-main>main</el-main>
-        <el-footer>Footer</el-footer>
+        <el-header class="el-header-structure">
+          <info-header/>
+        </el-header>
+        <el-main class="el-main-structure">
+          <article-abstract/>
+          <article-abstract/>
+          <article-abstract/>
+        </el-main>
+        <el-footer style="height: 5vh">
+          <info-footer/>
+        </el-footer>
       </el-container>
     </el-container>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import NavMenu from '~/components/NavMenu.vue'
+import InfoHeader from '~/components/Header.vue'
+import InfoFooter from '~/components/Footer.vue'
+import ArticleAbstract from '~/components/ArticleAbstract.vue'
 export default {
   components: {
-    Logo,
-    NavMenu
+    NavMenu,
+    InfoHeader,
+    InfoFooter,
+    ArticleAbstract
   }
 }
 </script>
 
 <style>
+.nav-menu-structure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.el-header-structure {
+  height: 35vh;
+  min-width: 800px;
+  min-height: 300px;
+}
+.el-main-structure {
+  margin: 0 auto;
+  width: 800px;
+}
 .el-header,
 .el-footer {
-  background-color: #b3c0d1;
   color: #333;
   text-align: center;
-  line-height: 60px;
+  /*line-height: 60px;*/
 }
 
 .el-aside {
@@ -42,10 +65,10 @@ export default {
 }
 
 .el-main {
-  background-color: #e9eef3;
   color: #333;
   text-align: center;
   line-height: 160px;
+  overflow: initial;
 }
 
 body > .el-container {

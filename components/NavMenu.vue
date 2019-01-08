@@ -1,15 +1,10 @@
 <template>
   <div>
-    <!--<el-radio-group-->
-    <!--v-model="isCollapse"-->
-    <!--style="margin-bottom: 20px;">-->
-    <!--<el-radio-button :label="false">展开</el-radio-button>-->
-    <!--<el-radio-button :label="true">收起</el-radio-button>-->
-    <!--</el-radio-group>-->
+
     <el-menu
       :collapse="isCollapse"
       default-active="1-4-1"
-      class="el-menu-vertical-demo"
+      class="el-menu-vertical-demo NavMenu"
       @open="handleOpen"
       @close="handleClose">
       <el-menu-item index="1">
@@ -74,8 +69,15 @@ export default {
 </script>
 
 <style scoped>
+.NavMenu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
-  /*min-height: 400px;*/
+  min-height: 300px;
 }
 </style>
