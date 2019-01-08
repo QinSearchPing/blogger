@@ -69,6 +69,7 @@ export default {
   text-align: center;
   line-height: 160px;
   overflow: initial;
+  padding: 60px 20px 20px;
 }
 
 body > .el-container {
