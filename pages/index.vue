@@ -1,34 +1,15 @@
 <template>
   <div>
-    <el-container style="height: 100vh">
-      <nav-menu class="nav-menu-structure"/>
-      <el-container>
-        <el-header class="el-header-structure">
-          <info-header/>
-        </el-header>
-        <el-main class="el-main-structure">
-          <article-abstract/>
-          <article-abstract/>
-          <article-abstract/>
-        </el-main>
-        <el-footer style="height: 5vh">
-          <info-footer/>
-        </el-footer>
-      </el-container>
-    </el-container>
+    <article-abstract/>
+    <article-abstract/>
+    <!--<article-abstract/>-->
   </div>
 </template>
 
 <script>
-import NavMenu from '~/components/NavMenu.vue'
-import InfoHeader from '~/components/Header.vue'
-import InfoFooter from '~/components/Footer.vue'
 import ArticleAbstract from '~/components/ArticleAbstract.vue'
 export default {
   components: {
-    NavMenu,
-    InfoHeader,
-    InfoFooter,
     ArticleAbstract
   }
 }

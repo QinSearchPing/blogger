@@ -8,12 +8,12 @@
     <nav>
       <ul class="menu">
         <li class="menu-item">
-          <a href="">
+          <a href="/">
             <i class="el-icon-location"><br>主页</i>
           </a>
         </li>
         <li class="menu-item">
-          <a href="">
+          <a href="/articles">
             <i class="el-icon-document" ><br>全部文章</i>
           </a>
         </li>
