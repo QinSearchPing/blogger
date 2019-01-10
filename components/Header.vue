@@ -23,7 +23,7 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="">
+          <a href="/projects">
             <i class="el-icon-menu" ><br>相关作品</i>
           </a>
         </li>

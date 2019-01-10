@@ -20,7 +20,7 @@
         <i class="el-icon-edit-outline"/>
         <span slot="title">生活与感悟</span>
       </el-menu-item>
-      <el-menu-item index="/note">
+      <el-menu-item index="/projects">
         <i class="el-icon-menu"/>
         <span slot="title">相关作品</span>
       </el-menu-item>
