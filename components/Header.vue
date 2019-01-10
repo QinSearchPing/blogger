@@ -14,17 +14,17 @@
         </li>
         <li class="menu-item">
           <a href="/articles">
-            <i class="el-icon-document" ><br>全部文章</i>
+            <i class="el-icon-document" ><br>技术文章</i>
           </a>
         </li>
         <li class="menu-item">
           <a href="">
-            <i class="el-icon-menu" ><br>技术标签</i>
+            <i class="el-icon-edit-outline" ><br>生活与感悟</i>
           </a>
         </li>
         <li class="menu-item">
           <a href="">
-            <i class="el-icon-edit-outline" ><br>风景与日记</i>
+            <i class="el-icon-menu" ><br>相关作品</i>
           </a>
         </li>
         <li class="menu-item">

@@ -112,8 +112,8 @@ html {
 
 .el-main {
   color: #333;
-  text-align: center;
-  line-height: 160px;
+  /*text-align: center;*/
+  /*line-height: 160px;*/
   overflow: initial;
   padding: 60px 20px 20px;
 }

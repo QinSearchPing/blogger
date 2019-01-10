@@ -13,10 +13,16 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/markdownit": "^1.2.3",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
     "element-ui": "^2.4.6",
-    "@nuxtjs/axios": "^5.0.0"
+    "github-markdown-css": "^2.10.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-attrs": "^2.3.2",
+    "markdown-it-container": "^2.0.0",
+    "markdown-it-highlightjs": "^3.0.0",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",

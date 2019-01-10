@@ -3,41 +3,41 @@
 
     <el-menu
       :collapse="isCollapse"
+      :router="isRouter"
       default-active="1-4-1"
       class="el-menu-vertical-demo NavMenu"
       @open="handleOpen"
       @close="handleClose">
-      <el-menu-item index="1">
+      <el-menu-item index="/">
         <i class="el-icon-location"/>
         <span slot="title">主页</span>
       </el-menu-item>
-      <el-menu-item index="2">
+      <el-menu-item index="/articles">
         <i class="el-icon-document"/>
-        <span slot="title">全部文章</span>
+        <span slot="title">技术文章</span>
       </el-menu-item>
-      <el-menu-item
-        index="3">
-        <i class="el-icon-menu"/>
-        <span slot="title">技术标签</span>
-      </el-menu-item>
-      <el-menu-item index="4">
+      <el-menu-item index="/notes">
         <i class="el-icon-edit-outline"/>
-        <span slot="title">风景与日记</span>
+        <span slot="title">生活与感悟</span>
       </el-menu-item>
-      <el-menu-item index="5">
+      <el-menu-item index="/note">
+        <i class="el-icon-menu"/>
+        <span slot="title">相关作品</span>
+      </el-menu-item>
+      <el-menu-item index="/about">
         <i class="el-icon-info"/>
         <span slot="title">关于我</span>
       </el-menu-item>
       <el-menu-item
         v-if="isCollapse"
-        index="6"
+        index=""
         @click = "isCollapse = !isCollapse">
         <i class="el-icon-d-arrow-right"/>
         <span slot="title">展开</span>
       </el-menu-item>
       <el-menu-item
         v-if="!isCollapse"
-        index="6"
+        index=""
         @click = "isCollapse = !isCollapse">
         <i class="el-icon-d-arrow-left"/>
         <span slot="title">收起</span>
@@ -51,7 +51,8 @@ export default {
   name: 'NavMenu',
   data() {
     return {
-      isCollapse: true
+      isCollapse: true,
+      isRouter: true
     }
   },
   methods: {

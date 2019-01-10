@@ -1,9 +1,12 @@
 <template>
-  <nuxt-child/>
+  <div>
+    note
+  </div>
 </template>
+
 <script>
 export default {
-  name: 'Articles'
+  name: 'Index'
 }
 </script>
 
