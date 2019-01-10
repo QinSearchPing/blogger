@@ -18,7 +18,7 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="">
+          <a href="/notes">
             <i class="el-icon-edit-outline" ><br>生活与感悟</i>
           </a>
         </li>

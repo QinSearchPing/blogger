@@ -1,12 +1,20 @@
 <template>
   <div>
-    note
+    <tags/>
+    <div style="margin-top: 50px">
+      <articles-block/>
+      <articles-block/>
+      <articles-block/>
+    </div>
   </div>
 </template>
 
 <script>
+import ArticlesBlock from '@/components/ArticlesBlock'
+import Tags from '@/components/Tags'
 export default {
-  name: 'Index'
+  name: 'Index',
+  components: { ArticlesBlock, Tags }
 }
 </script>
 

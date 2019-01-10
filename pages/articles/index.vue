@@ -14,17 +14,7 @@ import ArticlesBlock from '@/components/ArticlesBlock'
 import Tags from '@/components/Tags'
 export default {
   name: 'Articles',
-  components: { ArticlesBlock, Tags },
-  data() {
-    return {
-      activeNames: ['1']
-    }
-  },
-  methods: {
-    handleChange(val) {
-      console.log(val)
-    }
-  }
+  components: { ArticlesBlock, Tags }
 }
 </script>
 

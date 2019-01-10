@@ -7,27 +7,27 @@
       <li>
         <el-tag type="info">Java</el-tag>
         <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">（October 2018）</span>
+        <span class="createTime">October 2018</span>
       </li>
       <li>
         <el-tag type="info">JavaScript</el-tag>
         <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">（October 2018）</span>
+        <span class="createTime">October 2018</span>
       </li>
       <li>
         <el-tag type="info">Nodejs</el-tag>
         <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">（October 2018）</span>
+        <span class="createTime">October 2018</span>
       </li>
       <li>
         <el-tag type="info">APICloud</el-tag>
         <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">（October 2018）</span>
+        <span class="createTime">October 2018</span>
       </li>
       <li>
         <el-tag type="info">Spring</el-tag>
         <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">（October 2018）</span>
+        <span class="createTime">October 2018</span>
       </li>
     </ul>
   </div>
