@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <el-menu
       :collapse="isCollapse"
       :router="isRouter"
