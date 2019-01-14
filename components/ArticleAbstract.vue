@@ -4,23 +4,23 @@
       <h1 class="post-title">
         <a
           href=""
-          class="post-title-link">博客标题List</a>
+          class="post-title-link">{{ article.title }}</a>
       </h1>
       <div class="post-meta">
         <span>
           <span>发表于</span>
-          <time>2018-12-04</time>
+          <time>{{ article.time }}</time>
         </span>
         <span>
           &nbsp;| &nbsp;
-          <span>作者：Uranus</span>
+          <span>作者：{{ article.author + article.id }} </span>
         </span>
         <!--<span>作者 杨汉钦</span>-->
       </div>
       <div/>
     </header>
     <div>
-      开发代码兼容Vue CLI 3初始化的项目，构建时会根据package.json中的browserslist配置自动检测需要转译的语言特性，为构建代码转译JavaScript 并为 CSS 添加浏览器前缀，通常只需要修改browserslist即可兼容目标浏览器，例如兼容IE10可以做如下配置： 1，
+      {{ article.content }}
       <div class="post-more-link text-center">
         <a
           href=""
@@ -34,7 +34,22 @@
 </template>
 <script>
 export default {
-  name: 'ArticleAbstract'
+  name: 'ArticleAbstract',
+  props: {
+    article: {
+      type: Object,
+      required: true,
+      default: function() {
+        return {
+          id: '',
+          title: '',
+          time: '',
+          author: '',
+          content: ''
+        }
+      }
+    }
+  }
 }
 </script>
 
