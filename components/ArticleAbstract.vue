@@ -13,7 +13,7 @@
         </span>
         <span>
           &nbsp;| &nbsp;
-          <span>作者：{{ article.author + article.id }} </span>
+          <span>作者：{{ article.author }} </span>
         </span>
         <!--<span>作者 杨汉钦</span>-->
       </div>
