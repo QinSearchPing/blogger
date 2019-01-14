@@ -1,7 +1,7 @@
 <template>
   <div>
     <article-abstract
-      v-for="item in articles"
+      v-for="item in articleList"
       :key = "item.id"
       :article="item"/>
   </div>
@@ -15,7 +15,7 @@ export default {
   },
   data: function() {
     return {
-      articles: [
+      articleList: [
         {
           id: '001',
           title: '博客标题',

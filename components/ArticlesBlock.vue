@@ -4,30 +4,12 @@
       <!--<span class="title">CODING</span>-->
     </p>
     <ul class="posts-list">
-      <li>
-        <el-tag type="info">Java</el-tag>
-        <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">October 2018</span>
-      </li>
-      <li>
-        <el-tag type="info">JavaScript</el-tag>
-        <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">October 2018</span>
-      </li>
-      <li>
-        <el-tag type="info">Nodejs</el-tag>
-        <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">October 2018</span>
-      </li>
-      <li>
-        <el-tag type="info">APICloud</el-tag>
-        <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">October 2018</span>
-      </li>
-      <li>
-        <el-tag type="info">Spring</el-tag>
-        <a class="title">免费SSL证书升级全站HTTPS</a>
-        <span class="createTime">October 2018</span>
+      <li
+        v-for="item of articles"
+        :key="item.id">
+        <el-tag type="info"> {{ item.tag }} </el-tag>
+        <a class="title">{{ item.title }}</a>
+        <span class="createTime">{{ item.time }}</span>
       </li>
     </ul>
   </div>
@@ -35,7 +17,13 @@
 
 <script>
 export default {
-  name: 'ArticlesBlock'
+  name: 'ArticlesBlock',
+  props: {
+    articles: {
+      type: Array,
+      required: true
+    }
+  }
 }
 </script>
 
