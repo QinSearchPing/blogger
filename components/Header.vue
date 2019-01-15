@@ -28,7 +28,7 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="">
+          <a href="/about">
             <i class="el-icon-info" ><br>关于我</i>
           </a>
         </li>
