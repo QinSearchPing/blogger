@@ -8,29 +8,29 @@
     <nav>
       <ul class="menu">
         <li class="menu-item">
-          <a href="/">
+          <nuxt-link to="/">
             <i class="el-icon-location"><br>主页</i>
-          </a>
+          </nuxt-link>
         </li>
         <li class="menu-item">
-          <a href="/articles">
+          <nuxt-link to="/articles">
             <i class="el-icon-document" ><br>技术文章</i>
-          </a>
+          </nuxt-link>
         </li>
         <li class="menu-item">
-          <a href="/notes">
+          <nuxt-link to="/notes">
             <i class="el-icon-edit-outline" ><br>生活与感悟</i>
-          </a>
+          </nuxt-link>
         </li>
         <li class="menu-item">
-          <a href="/projects">
+          <nuxt-link to="/projects">
             <i class="el-icon-menu" ><br>相关作品</i>
-          </a>
+          </nuxt-link>
         </li>
         <li class="menu-item">
-          <a href="/about">
+          <nuxt-link to="/about">
             <i class="el-icon-info" ><br>关于我</i>
-          </a>
+          </nuxt-link>
         </li>
       </ul>
     </nav>

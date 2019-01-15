@@ -27,7 +27,8 @@ module.exports = {
   css: [
     'element-ui/lib/theme-chalk/index.css',
     'highlight.js/styles/hopscotch.css',
-    'github-markdown-css/github-markdown.css'
+    'github-markdown-css/github-markdown.css',
+    'assets/main.css'
   ],
 
   /*
