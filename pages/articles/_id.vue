@@ -1,22 +1,4 @@
 <template>
-  <!--<article>-->
-  <!--<header style="border-bottom: none">-->
-  <!--<h1 class="post-title">-->
-  <!--<p class="post-title-link">博客标题List</p>-->
-  <!--</h1>-->
-  <!--<div class="post-meta">-->
-  <!--<span>-->
-  <!--<span>发表于</span>-->
-  <!--<time>2018-12-04</time>-->
-  <!--</span>-->
-  <!--<span>-->
-  <!--&nbsp;| &nbsp;-->
-  <!--<span>作者：Uranus</span>-->
-  <!--</span>-->
-  <!--&lt;!&ndash;<span>作者 杨汉钦</span>&ndash;&gt;-->
-  <!--</div>-->
-  <!--<div/>-->
-  <!--</header>-->
   <div
     class="markdown-body"
     v-html="testmd"/>
